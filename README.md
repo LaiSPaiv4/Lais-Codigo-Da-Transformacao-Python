@@ -37,4 +37,4 @@ tratamento de exceções.
 1. Certifique-se de ter o Python instalado em sua máquina.
 2. Clone este repositório:
    ```bash
-   git clone [https://github.com/SEU-USUARIO/Codigo-da-Transformacao-Python.git](https://github.com/SEU-USUARIO/Codigo-da-Transformacao-Python.git)
+   git clone [https://github.com/LaiSPaiv4/Lais-Codigo-Da-Transformacao-Python.git](https://github.com/LaiSPaiv4/Lais-Codigo-Da-Transformacao-Python.git)
