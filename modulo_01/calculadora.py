@@ -6,6 +6,7 @@ como adição, subtração, multiplicação e divisão.
 
 print("\n=== Calculadora ===")
 
+# Inicia o laço de repetição infinito para a calculadora continuar rodando
 while True:
     
     try:
@@ -15,17 +16,18 @@ while True:
          print('1 -> + | 2 -> - | 3 -> * | 4 -> / | 0 -> Sair')
 
          opcao= int(input('Sua escolha: '))
-
+        
+        # Condição para encerrar o programa
          if opcao == 0:
              print('Encerrando a calculadora. Até mais!')
              break
          
-         # Verificar se a opção é válida, se for menor que 1 ou maior que 4, exibirar mensagem de erro 
-         # e solicitar que o usuário tente novamente
+         # Verificar se a opção digitada está  dentro do intervalo de 1 a 4
          if opcao < 1 or opcao > 4:
              print('Opção inválida! Tente novamente.')
              continue
-
+         
+        # Recebe os números para o cálculo e converte para float, permitindo números decimais
          n1= float(input('Digite um valor: '))
          n2= float(input('Digite outro valor: '))
  
@@ -41,9 +43,9 @@ while True:
          elif opcao == 4:
              if n2 != 0:
               print(f'O resultado da divisão é: {n1 / n2}')
-          
-         else:
-             print('Erro: Divisão por zero não é permitida.')
+             else:
+              print('Erro: Divisão por zero não é permitida.')
 
+    # Captura erros de digitação (ex: quando o usuário digita uma letra em vez de um número)
     except ValueError:
         print('Valor inválido. Por favor, digite um número válido.')    
