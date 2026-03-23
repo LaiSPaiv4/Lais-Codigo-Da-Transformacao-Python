@@ -39,15 +39,15 @@ O desse desafio aqui foi criar um programa que interage com o usuário e utiliza
 computador para exibir a data e a hora.
 
 ### ✨ O que o programa faz?
-*Pergunta o nome: O usuário digita seu nome e recebe uma saudação personalizada.
-*Mostra o dia e a hora: O programa consulta o relógio do sistema e exibe o momento exato da execução.
-*Formatação amigável: A data aparece no formato que usamos no Brasil (Dia/Mês/Ano), facilitando a leitura.
+* Pergunta o nome: O usuário digita seu nome e recebe uma saudação personalizada.
+* Mostra o dia e a hora: O programa consulta o relógio do sistema e exibe o momento exato da execução.
+* Formatação amigável: A data aparece no formato que usamos no Brasil (Dia/Mês/Ano), facilitando a leitura.
 
 ### 🛠️ Ferramentas Utilizadas
-*Comando input: Usado para conversar com o usuário e receber o nome.
-*Comando print: Usado para exibir as mensagens na tela.
-*Biblioteca datetime: Uma ferramenta pronta do Python que serve para trabalhar com datas e horários.
-*Função now: Recurso que "tira uma foto" do momento atual do relógio.
+* Comando input: Usado para conversar com o usuário e receber o nome.
+* Comando print: Usado para exibir as mensagens na tela.
+* Biblioteca datetime: Uma ferramenta pronta do Python que serve para trabalhar com datas e horários.
+* Função now: Recurso que "tira uma foto" do momento atual do relógio.
 
 ---
 
