@@ -51,6 +51,26 @@ computador para exibir a data e a hora.
 
 ---
 
+## 🤖 Projeto: Lógica de Programação e Tomada de Decisão (Módulo 03)
+
+O foco deste módulo foi aprofundar na lógica de programação, criando programas que conseguem analisar dados, comparar valores e repetir tarefas através de menus interativos.
+
+### ✨ O que o programa faz?
+* Operações Matemáticas: Realiza cálculos de soma, subtração, multiplicação e divisão (com proteção contra divisão por zero).
+* Comparação de Valores: Analisa dois números e identifica qual é o maior ou se são iguais.
+* Classificação por Faixa Etária: Identifica a fase da vida do usuário (Criança, Adolescente, Adulto ou Idoso)
+com base na idade informada.
+* Menu Interativo (Desafio Extra): Um sistema que utiliza um laço de repetição para permitir que o usuário escolha várias operações
+sem precisar reiniciar o programa.
+
+### 🛠️ Ferramentas Utilizadas
+* **Estruturas Condicionais (`if`, `elif`, `else`):** Essenciais para decidir qual mensagem exibir ou qual cálculo realizar.
+* **Laço de Repetição (`while True`):** Utilizado no desafio extra para criar um menu que só fecha quando o usuário solicita.
+* **F-strings:** Usadas para formatar a saída dos dados de forma limpa e profissional.
+* **Operadores de Comparação e Lógicos:** Para validar as idades e comparar a grandeza dos números.
+  
+---
+
 ## 🔧 Como executar o projeto
 
 1. Certifique-se de ter o Python instalado em sua máquina.
