@@ -71,6 +71,7 @@ sem precisar reiniciar o programa.
 * **Laço de Repetição (`while True`):** Utilizado no desafio extra para criar um menu que só fecha quando o usuário solicita.
 * **F-strings:** Usadas para formatar a saída dos dados de forma limpa e profissional.
 * **Operadores de Comparação e Lógicos:** Para validar as idades e comparar a grandeza dos números.
+<<<<<<< HEAD
 
 ---
 
@@ -91,6 +92,9 @@ Este módulo foi focado no domínio de estruturas que permitem armazenar múltip
 * **Método `.pop()`:** Utilizado na agenda para remover registros e recuperar o valor removido simultaneamente.
 * **Operadores Lógicos e Aritméticos:** Essenciais para a filtragem de dados e validação de opções do menu.
 
+=======
+  
+>>>>>>> 8bb80832b5c48db773baafad87e598d48b7eef03
 ---
 
 ## 🔧 Como executar o projeto
