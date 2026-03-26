@@ -10,6 +10,9 @@ O projeto está dividido em módulos:
 
 * **Modulo_01/**: Contém o desafio prático da Calculadora Interativa.
 * **Modulo_02/**: Contém o desafio prático Introdução ao Python.
+* **Modulo_03/**: Contém o desafio prático Lógica de Programação.
+* **Modulo_04/**: Contém o desafio prático Estrutura de Dados.
+* **Modulo_05/**: Contém o desafio prático Lógica de Programação.
 * *(Futuros módulos serão adicionados aqui)*
 
 ---
@@ -48,6 +51,45 @@ computador para exibir a data e a hora.
 * Comando print: Usado para exibir as mensagens na tela.
 * Biblioteca datetime: Uma ferramenta pronta do Python que serve para trabalhar com datas e horários.
 * Função now: Recurso que "tira uma foto" do momento atual do relógio.
+
+---
+
+## 🤖 Projeto: Lógica de Programação e Tomada de Decisão (Módulo 03)
+
+O foco deste módulo foi aprofundar na lógica de programação, criando programas que conseguem analisar dados, comparar valores e repetir tarefas através de menus interativos.
+
+### ✨ O que o programa faz?
+* Operações Matemáticas: Realiza cálculos de soma, subtração, multiplicação e divisão (com proteção contra divisão por zero).
+* Comparação de Valores: Analisa dois números e identifica qual é o maior ou se são iguais.
+* Classificação por Faixa Etária: Identifica a fase da vida do usuário (Criança, Adolescente, Adulto ou Idoso)
+com base na idade informada.
+* Menu Interativo (Desafio Extra): Um sistema que utiliza um laço de repetição para permitir que o usuário escolha várias operações
+sem precisar reiniciar o programa.
+
+### 🛠️ Ferramentas Utilizadas
+* **Estruturas Condicionais (`if`, `elif`, `else`):** Essenciais para decidir qual mensagem exibir ou qual cálculo realizar.
+* **Laço de Repetição (`while True`):** Utilizado no desafio extra para criar um menu que só fecha quando o usuário solicita.
+* **F-strings:** Usadas para formatar a saída dos dados de forma limpa e profissional.
+* **Operadores de Comparação e Lógicos:** Para validar as idades e comparar a grandeza dos números.
+
+---
+
+## 🎲 Projeto: Estruturas de Dados (Módulo 04)
+
+Este módulo foi focado no domínio de estruturas que permitem armazenar múltiplos dados e na criação de sistemas interativos complexos, utilizando Listas e Dicionários.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Gestor de Compras):** Um sistema dinâmico para manipular listas, permitindo adicionar, remover e visualizar itens em tempo real.
+* **Atividade 02 (Dicionário de Aluno):** Organização de informações heterogêneas (texto, números e listas) dentro de um objeto único para facilitar o acesso via chaves.
+* **Atividade 03 (Classificador de Paridade):** Um algoritmo que percorre sequências numéricas e utiliza lógica matemática (`%`) para separar números pares de ímpares.
+* **Desafio Extra (Agenda de Contatos):** Um sistema completo de gerenciamento usando Dicionários, aplicando o método `.pop()` para remoção segura e buscas otimizadas por nome.
+
+### 🛠️ Ferramentas Utilizadas
+* **Listas (`[]`):** Armazenamento sequencial e métodos `append()` e `remove()`.
+* **Dicionários (`{}`):** Mapeamento de informações por Chave e Valor e uso do método `.items()`.
+* **Loops (`while` e `for`):** Criação de menus infinitos e iteração sobre coleções de dados.
+* **Método `.pop()`:** Utilizado na agenda para remover registros e recuperar o valor removido simultaneamente.
+* **Operadores Lógicos e Aritméticos:** Essenciais para a filtragem de dados e validação de opções do menu.
 
 ---
 
