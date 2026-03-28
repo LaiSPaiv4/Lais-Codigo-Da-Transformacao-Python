@@ -56,7 +56,8 @@ computador para exibir a data e a hora.
 
 ## 🤖 Projeto: Lógica de Programação e Tomada de Decisão (Módulo 03)
 
-O foco deste módulo foi aprofundar na lógica de programação, criando programas que conseguem analisar dados, comparar valores e repetir tarefas através de menus interativos.
+O foco deste módulo foi aprofundar na lógica de programação, criando programas que conseguem analisar dados, 
+comparar valores e repetir tarefas através de menus interativos.
 
 ### ✨ O que o programa faz?
 * Operações Matemáticas: Realiza cálculos de soma, subtração, multiplicação e divisão (com proteção contra divisão por zero).
@@ -71,19 +72,23 @@ sem precisar reiniciar o programa.
 * **Laço de Repetição (`while True`):** Utilizado no desafio extra para criar um menu que só fecha quando o usuário solicita.
 * **F-strings:** Usadas para formatar a saída dos dados de forma limpa e profissional.
 * **Operadores de Comparação e Lógicos:** Para validar as idades e comparar a grandeza dos números.
-<<<<<<< HEAD
 
 ---
 
 ## 🎲 Projeto: Estruturas de Dados (Módulo 04)
 
-Este módulo foi focado no domínio de estruturas que permitem armazenar múltiplos dados e na criação de sistemas interativos complexos, utilizando Listas e Dicionários.
+Este módulo foi focado no domínio de estruturas que permitem armazenar múltiplos dados e na criação de sistemas interativos complexos, 
+utilizando Listas e Dicionários.
 
 ### ✨ O que foi desenvolvido?
-* **Atividade 01 (Gestor de Compras):** Um sistema dinâmico para manipular listas, permitindo adicionar, remover e visualizar itens em tempo real.
-* **Atividade 02 (Dicionário de Aluno):** Organização de informações heterogêneas (texto, números e listas) dentro de um objeto único para facilitar o acesso via chaves.
-* **Atividade 03 (Classificador de Paridade):** Um algoritmo que percorre sequências numéricas e utiliza lógica matemática (`%`) para separar números pares de ímpares.
-* **Desafio Extra (Agenda de Contatos):** Um sistema completo de gerenciamento usando Dicionários, aplicando o método `.pop()` para remoção segura e buscas otimizadas por nome.
+* **Atividade 01 (Gestor de Compras):** Um sistema dinâmico para manipular listas, permitindo adicionar, remover e visualizar
+itens em tempo real.
+* **Atividade 02 (Dicionário de Aluno):** Organização de informações heterogêneas (texto, números e listas) dentro de um
+objeto único para facilitar o acesso via chaves.
+* **Atividade 03 (Classificador de Paridade):** Um algoritmo que percorre sequências numéricase utiliza lógica matemática (`%`) 
+para separar números pares de ímpares.
+* **Desafio Extra (Agenda de Contatos):** Um sistema completo de gerenciamento usando Dicionários, aplicando o método `.pop()` 
+para remoção segura e buscas otimizadas por nome.
 
 ### 🛠️ Ferramentas Utilizadas
 * **Listas (`[]`):** Armazenamento sequencial e métodos `append()` e `remove()`.
@@ -92,9 +97,28 @@ Este módulo foi focado no domínio de estruturas que permitem armazenar múltip
 * **Método `.pop()`:** Utilizado na agenda para remover registros e recuperar o valor removido simultaneamente.
 * **Operadores Lógicos e Aritméticos:** Essenciais para a filtragem de dados e validação de opções do menu.
 
-=======
-  
->>>>>>> 8bb80832b5c48db773baafad87e598d48b7eef03
+---
+
+## 👩‍💻 Projeto: Modularização com Funções em Python (Módulo 05)
+
+Este módulo foi focado na criação de **Funções**, permitindo a reutilização de código, organização lógica e o processamento de dados
+através de parâmetros e retornos.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Saudação Personalizada):** Criação de uma função simples para padronizar mensagens de boas-vindas utilizando parâmetros.
+* **Atividade 02 (Cálculo de Média e Status):** Uma função que recebe uma lista de notas, calcula a média aritmética e retorna tanto o valor numérico quanto o status (Aprovado/Reprovado).
+* **Atividade 03 (Análise de Extremos):** Utilização das funções nativas `max()` e `min()` dentro de uma função customizada para identificar 
+os maiores e menores valores de uma lista.
+* **Atividade Extra (Sistema de Autenticação):** Desenvolvimento de uma lógica de login que integra funções com dicionários para validar 
+usuários e senhas de forma segura.
+
+### 🛠️ Ferramentas e Conceitos Aplicados
+* **Definição de Funções (`def`):** Estruturação de blocos de código reutilizáveis.
+* **Parâmetros e Argumentos:** Passagem de dados para dentro das funções para processamento dinâmico.
+* **Comando `return`:** Técnica para extrair resultados das funções e utilizá-los em outras partes do programa.
+* **Lógica de Validação:** Verificação de existência de chaves em dicionários combinada com comparação de valores.
+* **Formatação Numérica:** Uso de `: .2f` para exibir médias com apenas duas casas decimais.
+
 ---
 
 ## 🔧 Como executar o projeto
