@@ -12,7 +12,7 @@ O projeto está dividido em módulos:
 * **Modulo_02/**: Contém o desafio prático Introdução ao Python.
 * **Modulo_03/**: Contém o desafio prático Lógica de Programação.
 * **Modulo_04/**: Contém o desafio prático Estrutura de Dados.
-* **Modulo_05/**: Contém o desafio prático Lógica de Programação.
+* **Modulo_05/**: Contém o desafio prático Modularização com Funções.
 * *(Futuros módulos serão adicionados aqui)*
 
 ---
