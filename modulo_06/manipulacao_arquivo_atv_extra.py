@@ -2,6 +2,8 @@ import shutil
 import os
 from datetime import datetime
 
+print("\n===== Atividade Extra =====\n")
+
 def realizar_backup(pasta_origem, pasta_destino):
     # Verifica se a pasta de origem existe
     if not os.path.exists(pasta_origem):
