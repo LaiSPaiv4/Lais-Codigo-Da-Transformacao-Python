@@ -1,0 +1,17 @@
+{
+    "1": {
+        "nome": "Ana Silva",
+        "email": "ana@email.com",
+        "premium": true
+    },
+    "2": {
+        "nome": "Bruno Costa",
+        "email": "bruno@email.com",
+        "premium": false
+    },
+    "3": {
+        "nome": "Carla Dias",
+        "email": "carla@email.com",
+        "premium": true
+    }
+}
