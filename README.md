@@ -13,6 +13,9 @@ O projeto está dividido em módulos:
 * **Modulo_03/**: Contém o desafio prático Lógica de Programação.
 * **Modulo_04/**: Contém o desafio prático Estrutura de Dados.
 * **Modulo_05/**: Contém o desafio prático Modularização com Funções.
+* **Modulo_06/**: Contém o desafio prático Manipulação de Arquivos.
+* **Modulo_07/**: Contém o desafio prático Modularização e Bibliotecas Externas.
+* **Modulo_08/**: Contém o desafio prático Programação Orientada a Objetos.
 * *(Futuros módulos serão adicionados aqui)*
 
 ---
