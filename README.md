@@ -121,6 +121,70 @@ usuários e senhas de forma segura.
 
 ---
 
+## 📂 Projeto: Manipulação de Arquivos (Módulo 06)
+
+Este módulo foi focado no aprendizado de como o Python interage com o sistema de arquivos do computador, permitindo ler, criar e editar diferentes formatos de armazenamento de dados de forma persistente.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Persistência em TXT):** Criação de um sistema de gravação e leitura de arquivos de texto plano, utilizando codificação `UTF-8` para garantir a integridade de caracteres especiais.
+* **Atividade 02 (Integração JSON):** Manipulação de dicionários complexos (clientes premium) e sua conversão para o formato `JSON`, incluindo formatação visual com recuo (indent) e leitura dinâmica dos dados.
+* **Atividade 03 (Sistema de Notas em CSV):** Um gerenciador interativo via terminal que permite adicionar nomes, matérias e notas em uma planilha, com verificação automática de cabeçalho e exibição formatada em colunas.
+* **Atividade Extra (Sistema de Backup Automatizado):** Um utilitário de sistema que utiliza bibliotecas de manipulação de diretórios para criar cópias de segurança de pastas inteiras, organizando-as por data e hora `(timestamp)`.
+
+### 🛠️ Ferramentas Utilizadas
+* **Bibliotecas Padrão do Python:** Uso das ferramentas nativas `json` (para dados estruturados), `csv` (para planilhas), 
+`os` e `shutil` (para manipulação de pastas e arquivos de sistema) e `datetime` (para controle de tempo no backup).
+* **Gerenciador de Contexto (with open()):** Utilizado para garantir a abertura e o fechamento seguro de todos os arquivos gerados.
+* **Modos de Escrita e Leitura:** Aplicação prática dos parâmetros 'w' (escrita), 'r' (leitura) e 'a' (anexar dados).
+* **Tratamento e Formatação:** Uso de f-strings com alinhamento e codificação UTF-8 para evitar erros de acentuação nos arquivos.
+
+---
+
+## 📦 Projeto: Modularização e Bibliotecas Externas (Módulo 07)
+
+Este módulo foi dedicado à organização de projetos em múltiplos arquivos e ao uso de bibliotecas externas para aumentar a produtividade, separando a lógica de funções da execução principal do programa.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Criação de Módulos Próprios):** Desenvolvimento do arquivo utilidades.py com funções matemáticas personalizadas (soma, subtração e potência), importadas para o script principal.
+* **Atividade 02 (Uso de Bibliotecas Externas):** Implementação da biblioteca Faker para geração de dados fictícios em português e integração com datetime para carimbos de data/hora.
+* **Atividade 03 (Jogo Adivinha-Python):** Sistema interativo de adivinhação com geração de números aleatórios e cálculo de proximidade para fornecer dicas ao usuário.
+
+### 🛠️ Ferramentas Utilizadas
+* **Modularização:** Uso de import e from/import para conectar diferentes arquivos de código.
+* **Bibliotecas Nativas:**
+* random: Geração de valores aleatórios.
+* math: Operações matemáticas avançadas (valor absoluto).
+* datetime: Captura e formatação de datas.
+* **Bibliotecas de Terceiros:**
+* Faker: Criação de dados de teste (nomes, e-mails e cidades).
+* **Lógica de Interação:** Implementação de loops while e condicionais if/elif/else para o controle do fluxo do jogo.
+
+---
+
+## 🏛️ Projeto: Programação Orientada a Objetos (Módulo 08)
+
+Este módulo foi dedicado ao estudo da POO, focando na criação de sistemas modulares e reutilizáveis através de classes, objetos, herança e
+gerenciamento de estados.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Classes e Objetos):** Criação da `classe Carro` para entender a estrutura de atributos `(marca, modelo, cor)` e métodos de ação, 
+como o comportamento de buzinar.
+* **Atividade 02 (Herança e Polimorfismo):** Implementação de uma `classe especializada CarroEletrico` que herda características da classe base 
+e adiciona atributos específicos como autonomia de bateria.
+* **Atividade 03 (Encapsulamento e Estados):** Desenvolvimento de uma `classe Celular` com métodos para alternar o status `(ligado/desligado)`
+e uso do método especial `__str__` para representação textual do objeto.
+* **Atividade Extra (Sistema de Biblioteca):** Um sistema completo de gerenciamento que utiliza a interação entre duas classes (Livro e Biblioteca)
+para controlar acervos, realizar empréstimos e validar disponibilidades.
+
+### 🛠️ Ferramentas Utilizadas
+* **Paradigma POO:** Uso de Classes, Objetos e o método construtor `__init__`.
+* **Herança:** Aplicação da função `super()` para reaproveitamento de lógica de classes pai.
+* **Métodos Especiais:** Implementação do `__str__` para personalizar a exibição dos objetos em listas e prints.
+* **Gestão de Estados:** Uso de variáveis booleanas para controlar o fluxo de disponibilidade `(True/False)`.
+* **Lógica de Coleções:** Uso de listas internas para armazenar e percorrer múltiplos objetos dinamicamente.
+
+---
+
 ## 🔧 Como executar o projeto
 
 1. Certifique-se de ter o Python instalado em sua máquina.
