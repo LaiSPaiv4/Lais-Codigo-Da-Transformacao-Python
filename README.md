@@ -188,6 +188,29 @@ para controlar acervos, realizar empréstimos e validar disponibilidades.
 
 ---
 
+## 👩‍🏭 Projeto: Tratamento de Erros (Módulo 09)
+
+Este módulo foi dedicado ao estudo da resiliência de software, focando em como prever, capturar e tratar falhas para garantir que o sistema continue funcionando mesmo diante de entradas inesperadas.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Fundamentos do Try-Except):** Implementação de cálculos matemáticos seguros para tratar erros de divisão por zero e entrada
+de dados inválidos (letras em vez de números).
+* **Atividade 02 (Exceções Customizadas):** Criação da classe `SaldoInsuficienteError` para personalizar mensagens de erro em sistemas bancários,
+indo além das exceções padrão do Python.
+* **Atividade 03 (Validação de Dados):** Desenvolvimento de funções de proteção para garantir que entradas como idade e valores monetários sejam 
+sempre números positivos e coerentes.
+* **Atividade Extra (Sistema de Login e Segurança):** Um sistema de autenticação com limite de tentativas, utilizando exceções para controlar
+acessos negados e bloqueios de segurança.
+
+### 🛠️ Ferramentas Utilizadas
+* **Blocos de Controle:** Uso de `try`, `except`, `else` e `finally` para gerenciar o fluxo de erro.
+* **Exceções Personalizadas:** Criação de classes próprias herdando de `Exception` para regras de negócio específicas.
+* **Comando Raise:** Lançamento manual de exceções para interromper execuções perigosas ou inválidas.
+* **Sanitização de Input:** Uso de loops `while True` combinados com tratamento de erro para validar dados em tempo real.
+* **Lógica de Segurança:** Implementação de contadores de tentativas e verificadores de credenciais.
+
+---
+
 ## 🔧 Como executar o projeto
 
 1. Certifique-se de ter o Python instalado em sua máquina.
