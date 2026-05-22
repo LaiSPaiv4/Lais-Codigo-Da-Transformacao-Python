@@ -16,6 +16,9 @@ O projeto está dividido em módulos:
 * **Mudulo_06/**: Contém o desafio prático Manipulação de Arquivos.
 * **Mudulo_07/**: Contém o desafio prático Modularização e Bibliotecas Externas.
 * **Mudulo_08/**: Contém o desafio prático Programação Orientada a Objetos.
+* **Modulo_09/**: Contém o desafio prático Tratamento de Erros.
+* **Modulo_10/**: Contém o desafio prático Introdução a APIs.
+* **Modulo_11/**: Contém o desafio prático Programação Orientada a Objetos.
 * *(Futuros módulos serão adicionados aqui)*
 
 ---
@@ -24,7 +27,7 @@ O projeto está dividido em módulos:
 
 O primeiro desafio consistiu em desenvolver uma calculadora funcional que executa operações básicas 
 de aritmética via terminal.
-
+https://gemini.google.com/app/42e4764725d1e91b
 ### 🚀 Funcionalidades
 * Soma, Subtração, Multiplicação e Divisão.
 * Tratamento de erro para **divisão por zero**.
@@ -208,6 +211,24 @@ acessos negados e bloqueios de segurança.
 * **Comando Raise:** Lançamento manual de exceções para interromper execuções perigosas ou inválidas.
 * **Sanitização de Input:** Uso de loops `while True` combinados com tratamento de erro para validar dados em tempo real.
 * **Lógica de Segurança:** Implementação de contadores de tentativas e verificadores de credenciais.
+
+---
+
+## 🌐 Projeto: Introdução a APIs (Módulo 10)
+
+Este módulo foi focado no aprendizado de como o Python se conecta com o mundo externo, utilizando a biblioteca `requests` para consumir APIs (Application Programming Interfaces), tratar dados recebidos em formato JSON e gerenciar erros de conexão de forma resiliente.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Verificação de Ambiente):** Configuração do ambiente no VS Code e validação da instalação do gerenciador de pacotes `pip` e da biblioteca `requests`.
+* **Atividade 02 (Previsão do Tempo com OpenWeatherMap):** Integração com uma API real de clima para buscar dados meteorológicos globais, aplicando técnicas de autenticação via Chave de API (API Key).
+* **Atividade 03 (Filtração e Formatação de Dados):** Extração seletiva de informações específicas do JSON bruto (como temperatura atual, sensação térmica e condições climáticas) e exibição organizada no terminal utilizando emoticons e réguas visuais.
+* **Atividade 04 (Consumo Avançado - Buscador de Filmes no TMDB):** Desenvolvimento de um sistema completo que consome a API do The Movie Database para buscar filmes por título em tempo real, tratando textos longos com quebras de linha automáticas e convertendo formatos de datas internacionais.
+
+### 🛠️ Ferramentas e Conceitos Aplicados
+* **Biblioteca `requests`:** Uso do método `requests.get()` para realizar requisições HTTP do tipo GET a servidores externos.
+* **Tratamento de Erros de Rede:** Implementação de blocos `try/except` específicos para capturar problemas de internet (`ConnectionError`), respostas de erro dos servidores (`HTTPError`) e proteção contra travamentos por lentidão usando o parâmetro `timeout`.
+* **Manipulação de JSON:** Uso do método `.json()` para transformar dados brutos em dicionários Python nativos, navegando de forma segura através do método `.get()`.
+* **Biblioteca `textwrap`:** Utilização da ferramenta nativa para formatar e ajustar sinopses longas dentro do limite visual do terminal.
 
 ---
 
