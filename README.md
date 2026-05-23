@@ -18,7 +18,7 @@ O projeto está dividido em módulos:
 * **Mudulo_08/**: Contém o desafio prático Programação Orientada a Objetos.
 * **Modulo_09/**: Contém o desafio prático Tratamento de Erros.
 * **Modulo_10/**: Contém o desafio prático Introdução a APIs.
-* **Modulo_11/**: Contém o desafio prático Programação Orientada a Objetos.
+* **Modulo_11/**: Contém o desafio prático Banco de Dados com PostgreSQL.
 * *(Futuros módulos serão adicionados aqui)*
 
 ---
@@ -27,7 +27,7 @@ O projeto está dividido em módulos:
 
 O primeiro desafio consistiu em desenvolver uma calculadora funcional que executa operações básicas 
 de aritmética via terminal.
-https://gemini.google.com/app/42e4764725d1e91b
+
 ### 🚀 Funcionalidades
 * Soma, Subtração, Multiplicação e Divisão.
 * Tratamento de erro para **divisão por zero**.
@@ -229,6 +229,24 @@ Este módulo foi focado no aprendizado de como o Python se conecta com o mundo e
 * **Tratamento de Erros de Rede:** Implementação de blocos `try/except` específicos para capturar problemas de internet (`ConnectionError`), respostas de erro dos servidores (`HTTPError`) e proteção contra travamentos por lentidão usando o parâmetro `timeout`.
 * **Manipulação de JSON:** Uso do método `.json()` para transformar dados brutos em dicionários Python nativos, navegando de forma segura através do método `.get()`.
 * **Biblioteca `textwrap`:** Utilização da ferramenta nativa para formatar e ajustar sinopses longas dentro do limite visual do terminal.
+
+---
+
+## 🗄️ Projeto: Banco de Dados com SQLite (Módulo 11)
+
+Este módulo foi focado na introdução ao armazenamento de dados persistentes, utilizando a biblioteca nativa `sqlite3` do Python para criar bancos de dados locais, estruturar tabelas relacionais e executar comandos SQL essenciais para manipulação de informações.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Criação de Tabela):** Configuração inicial de um banco de dados (`sistema.db`) e criação da tabela `Clientes`, definindo chaves primárias automáticas (`AUTOINCREMENT`) e restrições de integridade (`UNIQUE` e `NOT NULL`).
+* **Atividade 02 (Operações CRUD):** Desenvolvimento de um sistema gerenciador interativo via terminal que implementa o ciclo completo do CRUD: Inserir (`INSERT`), Consultar (`SELECT`), Atualizar (`UPDATE`) e Deletar (`DELETE`) registros na tabela de clientes.
+* **Atividade 03 (Consultas e Filtros SQL):** Exploração de consultas SQL avançadas utilizando o operador `LIKE` e caracteres curinga (`%`) para filtrar registros específicos, como buscar clientes por iniciais do nome ou por provedor de e-mail.
+* **Desafio Extra (Gestor de Tarefas):** Criação de um utilitário completo de lista de tarefas integrado ao mesmo banco de dados, utilizando uma nova tabela (`Tarefas`) com controle automático de estados e status (`Pendente` / `Concluído`).
+
+### 🛠️ Ferramentas e Conceitos Aplicados
+* **Biblioteca `sqlite3`:** Uso de recursos nativos para conexão, execução de comandos por meio de objetos `cursor` e persistência de dados com `commit()`.
+* **Linguagem SQL Básica:** Domínio de comandos fundamentais de DDL (Data Definition Language) e DML (Data Manipulation Language).
+* **Prepared Statements (`?`):** Aplicação de boas práticas de segurança utilizando interrogações como marcadores de posição nas consultas para prevenir ataques de *SQL Injection*.
+* **Tratamento de Exceções do Banco:** Captura de erros específicos de banco de dados, como `sqlite3.Error` e `sqlite3.IntegrityError` (para evitar cadastros duplicados).
 
 ---
 
