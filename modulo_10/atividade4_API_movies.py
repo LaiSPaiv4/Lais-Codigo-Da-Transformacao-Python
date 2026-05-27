@@ -1,7 +1,7 @@
 import requests
 
 API_KEY = "31688f183c3c29e0ab9031035c89b197"  
-NOME_FILME = "Devoradores de Estrelas"  
+NOME_FILME = "Backrooms"  
 
 URL = f"https://api.themoviedb.org/3/search/movie?api_key={API_KEY}&query={NOME_FILME}&language=pt-BR"
 

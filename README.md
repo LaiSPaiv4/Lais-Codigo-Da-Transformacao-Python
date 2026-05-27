@@ -250,6 +250,25 @@ Este módulo foi focado na introdução ao armazenamento de dados persistentes, 
 
 ---
 
+## 🧪 Projeto: Testes Automatizados em Python (Módulo 12)
+
+Este módulo foi dedicado ao desenvolvimento de testes automatizados, uma das práticas mais importantes da engenharia de software para garantir
+a estabilidade, confiabilidade e o correto funcionamento do código diante de novas alterações.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Testes Unitários de Funções):** Criação de testes simples com o módulo nativo `unittest` para validar o comportamento isolado de funções matemáticas de soma.
+* **Atividade 02 (Testes de Classes):** Criação de uma classe `Calculadora` e estruturação de cenários de teste complexos utilizando o método `setUp()` do `unittest` para instanciar objetos de forma limpa antes de cada verificação.
+* **Atividade 03 (Tratamento de Exceções):** Implementação de testes robustos para validar entradas inválidas, utilizando `assertRaises` para garantir que o sistema dispare erros esperados (como impedir a divisão por zero).
+* **Desafio Extra (Testes de API com Pytest):** Desenvolvimento de testes de integração para uma API construída em Flask utilizando o framework `pytest`, aplicando o conceito de `fixtures` para simular requisições HTTP (`GET`) e validar os códigos de status (`200 OK`) e retornos em JSON.
+
+### 🛠️ Ferramentas e Conceitos Aplicados
+* **Framework `unittest`:** Criação de classes de teste herdando de `unittest.TestCase` e uso de asserções como `assertEqual` e `assertRaises`.
+* **Regras de Descoberta (`Discovery`):** Organização e nomenclatura padronizada de arquivos de teste (`test_*.py`) para execução em lote via terminal.
+* **Framework `pytest`:** Instalação, configuração e uso de um dos frameworks de testes mais modernos do ecossistema Python.
+* **Mocks de Cliente Flask (`test_client`):** Simulação de testes de integração em rotas de API sem a necessidade de levantar um servidor web real em ambiente de desenvolvimento.
+
+---
+
 ## 🔧 Como executar o projeto
 
 1. Certifique-se de ter o Python instalado em sua máquina.
