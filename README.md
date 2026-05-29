@@ -19,6 +19,9 @@ O projeto está dividido em módulos:
 * **Modulo_09/**: Contém o desafio prático Tratamento de Erros.
 * **Modulo_10/**: Contém o desafio prático Introdução a APIs.
 * **Modulo_11/**: Contém o desafio prático Banco de Dados com PostgreSQL.
+* **Modulo_12/**: Contém o desafio prático Testes Automatizados em Python
+* **Modulo_13/**: Contém o desafio prático Desenvolvimento de APIs com Flask
+* **Modulo_14/**: Contém o desafio prático 
 * *(Futuros módulos serão adicionados aqui)*
 
 ---
@@ -266,6 +269,25 @@ a estabilidade, confiabilidade e o correto funcionamento do código diante de no
 * **Regras de Descoberta (`Discovery`):** Organização e nomenclatura padronizada de arquivos de teste (`test_*.py`) para execução em lote via terminal.
 * **Framework `pytest`:** Instalação, configuração e uso de um dos frameworks de testes mais modernos do ecossistema Python.
 * **Mocks de Cliente Flask (`test_client`):** Simulação de testes de integração em rotas de API sem a necessidade de levantar um servidor web real em ambiente de desenvolvimento.
+
+---
+
+## 🌐🌶️ Projeto: Desenvolvimento de APIs com Flask (Módulo 13)
+
+Este módulo foi dedicado ao desenvolvimento de APIs (Application Programming Interfaces) robustas utilizando o framework Flask, 
+conectando rotas HTTP ao banco de dados relacional SQLite para garantir a persistência de informações e aplicando conceitos de segurança e autenticação.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Configuração Básica de Servidor):** Configuração de um ambiente Flask básico com a implementação de uma rota `GET /saudacao` que retorna uma mensagem de boas-vindas estruturada.
+* **Atividade 02 (Requisições com JSON):** Desenvolvimento de uma rota `POST /cadastrar` para recebimento de dados e parâmetros enviados pelos clientes no formato JSON, aplicando conceitos de validação de payload.
+* **Atividade 03 (Persistência no SQLite):** Integração do servidor Flask ao banco de dados relacional SQLite, implementando a criação automatizada de tabelas e persistindo os dados dos usuários enviados via requisições POST.
+* **Desafio Extra (API Completa de Blog com Autenticação):** Desenvolvimento de uma API completa para um sistema de blog, contendo relacionamentos entre tabelas (usuários, posts e comentários), controle de gerenciamento de publicações e sistema de autenticação via Token seguro gerado dinamicamente para os usuários.
+
+### 🛠️ Ferramentas e Conceitos Aplicados
+* **Framework Flask:** Utilização de um dos microframeworks mais populares do Python para a criação rápida, modular e performática de servidores web e rotas de API.
+* **Protocolo HTTP e Métodos:** Manipulação prática dos verbos HTTP mais importantes (`GET` para leitura e `POST` para criação de dados), compreendendo o uso dos códigos de status apropriados (`200 OK`, `201 Created`, `400 Bad Request` e `401 Unauthorized`).
+* **Banco de Dados SQLite:** Modelagem de tabelas e execução de comandos SQL nativos (`INSERT INTO`, `SELECT`, `JOIN`) para salvar dados localmente em arquivos `.db`.
+* **Autenticação Baseada em Token:** Conceito de segurança para proteção de endpoints, exigindo um token gerado no login através de Headers de Autorização (`Authorization`) para permitir operações de escrita (posts e comentários).
 
 ---
 
