@@ -290,6 +290,23 @@ conectando rotas HTTP ao banco de dados relacional SQLite para garantir a persis
 * **Autenticação Baseada em Token:** Conceito de segurança para proteção de endpoints, exigindo um token gerado no login através de Headers de Autorização (`Authorization`) para permitir operações de escrita (posts e comentários).
 
 ---
+## 🌐🚀 Projeto: Desenvolvimento de Sistemas Web com Django (Módulo 14)
+
+Este módulo foi dedicado ao desenvolvimento de aplicações web completas e robustas utilizando o Django, um dos frameworks de nível corporativo mais populares do mercado. Durante o bloco, foi desenvolvido um ecossistema com arquitetura MTV (Model-Template-View) integrado a um banco de dados relacional SQLite, englobando a criação de um CRUD funcional, painel administrativo integrado e testes automatizados de ponta a ponta.
+
+### ✨ O que foi desenvolvido?
+* **Atividade 01 (Configuração e Arquitetura do Projeto):** Criação da estrutura de pastas isolada utilizando o utilitário do Django, inicialização do servidor local, configuração de migrações (`migrations`) para o banco de dados e mapeamento das rotas principais do ecossistema.
+* **Atividade 02 (Desenvolvimento do CRUD de Produtos):** Construção de um gerenciador de inventário completo, permitindo que o usuário consiga Criar, Ler, Atualizar e Deletar produtos salvos no sistema, utilizando formulários interativos e exibições em tempo real.
+* **Atividade 03 (Painel de Administração e Testes Automatizados):** Customização e habilitação do painel nativo do Django Admin com registros customizados do modelo e desenvolvimento de rotas de testes automatizados (`TestCase`) para validar se as views de cadastro e o banco de dados estão respondendo sem falhas.
+* **Desafio Extra (Filtros Inteligentes e Paginação de Resultados):** Otimização da interface de usuário com a implementação de um sistema dinâmico de busca por nome (ignorando maiúsculas e minúsculas) aliado a um mecanismo de paginação para limitar a quantidade de itens por tela, melhorando a performance e a experiência de navegação.
+
+### 🛠️ Ferramentas e Conceitos Aplicados
+* **Framework Django:** Utilização da filosofia *"batteries included"* do framework para o desenvolvimento rápido de aplicações seguras, modulares, escaláveis e prontas para produção.
+* **Arquitetura MTV:** Compreensão e divisão de responsabilidades do sistema isolando os dados de banco (**Models**), as páginas visuais do cliente (**Templates**) e a ponte lógica inteligente com as regras de negócio (**Views**).
+* **Django Admin Integrado:** Ativação e configuração de um painel de gerenciamento completo para manipulação de registros de banco de dados através de uma interface administrativa protegida por superusuários autenticados.
+* **Testes com TestCase:** Criação de rotas simuladas internas (`django.test.Client`) para validação automática de códigos de status HTTP (200 OK, 302 Redirect) e consistência na gravação dos modelos de dados.
+* **Paginator e Filtros de Consulta:** Manipulação de queries avançadas no ORM do Django (utilizando comandos como `__icontains`) integrados à classe `Paginator` para segmentar coleções extensas de dados no HTML de forma responsiva.
+---
 
 ## 🔧 Como executar o projeto
 

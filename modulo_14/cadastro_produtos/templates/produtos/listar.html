@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Produtos</title>
+    <style>
+        /* Cores globais e reset */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background-color: #121214; 
+            color: #e1e1e6; 
+        }
+        
+        h2 { 
+            color: #fff; 
+            border-bottom: 2px solid #29292e; 
+            padding-bottom: 8px; 
+            margin-top: 30px; 
+        }
+
+        /* Containers modernos */
+        .busca-container, .form-container { 
+            background: #202024; 
+            padding: 25px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 25px; 
+            border-top: 4px solid #007acc;
+        }
+        
+        .form-container { border-top-color: #28a745; }
+
+        /* Inputs elegantes */
+        input, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin: 8px 0 16px 0; 
+            background: #121214; 
+            color: #fff; 
+            border: 2px solid #29292e; 
+            border-radius: 6px; 
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+        
+        input:focus, textarea:focus { 
+            border-color: #007acc; 
+            outline: none; 
+        }
+
+        /* Botões com efeito Hover */
+        button { 
+            color: white; 
+            border: none; 
+            padding: 12px 24px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            transition: background 0.2s, transform 0.1s;
+        }
+        
+        button:active { transform: scale(0.98); }
+        .btn-salvar { background: #28a745; }
+        .btn-salvar:hover { background: #218838; }
+        .btn-buscar { background: #007acc; }
+        .btn-buscar:hover { background: #0062a3; }
+
+        /* Tabela estilo Dashboard */
+        table { 
+            width: 100%; 
+            border-collapse: separate; 
+            border-spacing: 0;
+            margin-top: 20px; 
+            background: #202024; 
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        th, td { padding: 14px 20px; text-align: left; }
+        th { background-color: #29292e; color: #007acc; font-weight: 600; text-transform: uppercase; font-size: 13px; }
+        td { border-bottom: 1px solid #29292e; color: #c4c4cc; }
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background: #29292e; }
+
+        /* Tags de ações */
+        .btn-del { background: #dc3545; padding: 6px 12px; color: white; text-decoration: none; border-radius: 4px; font-size: 14px; font-weight: 500; transition: background 0.2s; }
+        .btn-del:hover { background: #c82333; }
+        .btn-edit { background: #ffc107; padding: 6px 12px; color: black; text-decoration: none; margin-right: 8px; border-radius: 4px; font-size: 14px; font-weight: 500; transition: background 0.2s; }
+        .btn-edit:hover { background: #e0a800; }
+        
+        /* Paginação e Alertas */
+        .paginacao { margin-top: 25px; text-align: center; }
+        .paginacao a { color: #e1e1e6; text-decoration: none; padding: 8px 16px; background: #202024; margin: 0 4px; border-radius: 4px; border: 1px solid #29292e; }
+        .paginacao a:hover { background: #007acc; border-color: #007acc; }
+        .alerta-vazio { background: #202024; padding: 30px; border-radius: 8px; text-align: center; border: 2px dashed #29292e; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    {% if produtos.paginator.count > 0 or termo_busca %}
+    <div class="busca-container">
+        <h3 style="margin-top:0; color:#007acc;">🔍 Filtro de Estoque</h3>
+        <form method="GET" action="{% url 'listar_produtos' %}">
+            <input type="text" name="busca" value="{{ termo_busca }}" placeholder="O que você está procurando?">
+            <button type="submit" class="btn-buscar">Pesquisar</button>
+            {% if termo_busca %}
+                <a href="{% url 'listar_produtos' %} " style="color: #ffc107; margin-left: 15px; text-decoration: none; font-weight: bold;">Limpar Filtro</a>
+            {% endif %}
+        </form>
+    </div>
+    {% endif %}
+
+    <div class="form-container">
+        <h3 style="margin-top:0; color:#28a745;">📦 Incluir Novo Produto</h3>
+        <form method="POST" action="{% url 'cadastrar_produto' %}">
+            {% csrf_token %}
+            <label>Nome do Item</label>
+            <input type="text" name="nome" placeholder="Ex: iPhone 15 Pro Max" required>
+            
+            <label>Descrição Detalhada</label>
+            <textarea name="descricao" rows="3" placeholder="Insira as especificações do produto..." required></textarea>
+            
+            <label>Preço de Venda (R$)</label>
+            <input type="number" step="0.01" name="preco" placeholder="0.00" required>
+            
+            <label>Quantidade Disponível</label>
+            <input type="number" name="quantidade" placeholder="0" required>
+            
+            <button type="submit" class="btn-salvar">✨ Cadastrar no Sistema</button>
+        </form>
+    </div>
+
+    <h2>📋 Itens Registrados</h2>
+
+    {% if produtos %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for produto in produtos %}
+                <tr>
+                    <td><strong style="color: #fff;">{{ produto.nome }}</strong></td>
+                    <td>{{ produto.descricao }}</td>
+                    <td style="color: #28a745; font-weight: bold;">R$ {{ produto.preco }}</td>
+                    <td>{{ produto.quantidade }} un.</td>
+                    <td>
+                        <a href="{% url 'atualizar_produto' produto.id %}" class="btn-edit">Editar</a>
+                        <a href="{% url 'excluir_produto' produto.id %}" class="btn-del">Excluir</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="paginacao">
+            {% if produtos.has_previous %}
+                <a href="?page=1{% if termo_busca %}&busca={{ termo_busca }}{% endif %}">&laquo;</a>
+                <a href="?page={{ produtos.previous_page_number }}{% if termo_busca %}&busca={{ termo_busca }}{% endif %}">Anterior</a>
+            {% endif %}
+
+            <span style="margin: 0 10px; color: #8d8d99;">Página {{ produtos.number }} de {{ produtos.paginator.num_pages }}</span>
+
+            {% if produtos.has_next %}
+                <a href="?page={{ produtos.next_page_number }}{% if termo_busca %}&busca={{ termo_busca }}{% endif %}">Próxima</a>
+                <a href="?page={{ produtos.paginator.num_pages }}{% if termo_busca %}&busca={{ termo_busca }}{% endif %}">&raquo;</a>
+            {% endif %}
+        </div>
+    {% else %}
+        <div class="alerta-vazio">
+            <p style="font-size: 18px; color: #ffc107; margin-bottom: 5px;">Estoque zerado ou nenhum resultado encontrado.</p>
+            <p style="color: #8d8d99; margin-top: 0;">Insira produtos acima ou redefina sua busca.</p>
+        </div>
+    {% endif %}
+
+</body>
+</html>
