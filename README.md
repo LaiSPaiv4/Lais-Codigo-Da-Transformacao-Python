@@ -19,9 +19,9 @@ O projeto está dividido em módulos:
 * **Modulo_09/**: Contém o desafio prático Tratamento de Erros.
 * **Modulo_10/**: Contém o desafio prático Introdução a APIs.
 * **Modulo_11/**: Contém o desafio prático Banco de Dados com PostgreSQL.
-* **Modulo_12/**: Contém o desafio prático Testes Automatizados em Python
-* **Modulo_13/**: Contém o desafio prático Desenvolvimento de APIs com Flask
-* **Modulo_14/**: Contém o desafio prático 
+* **Modulo_12/**: Contém o desafio prático Testes Automatizados em Python.
+* **Modulo_13/**: Contém o desafio prático Desenvolvimento de APIs com Flask.
+* **Modulo_14/**: Contém o desafio prático Introdução ao Django.
 * *(Futuros módulos serão adicionados aqui)*
 
 ---
